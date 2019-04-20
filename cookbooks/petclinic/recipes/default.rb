@@ -14,7 +14,7 @@ tomcat_service "petclinicserver" do
 	end
 
 remote_file '/opt/tomcat_petclinicserver_8_0_36/webapps/petclinic.war' do
-	source 'http://localhost:8081/generic_repository/pettclinic-1.0.0-SNAPSHOT.war'
+	source 'http://192.241.144.123:8081/artifactory/generic-local/org/springframework/samples/spring-petclinic/1.0.1-SNAPSHOT/spring-petclinic-1.0.1-SNAPSHOT.war'
 	owner 'tomcat_petclinicserver'
 	group 'tomcat_petclinicserver'
 	end
